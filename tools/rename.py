@@ -2,7 +2,8 @@
 import os  
 import os.path  
 import pdb
-  
+import sys
+
 def num2str(count):
     if count<10:
         name = '0000'+str(count)
@@ -16,14 +17,14 @@ def num2str(count):
         name = str(count)
     return name
     
-curDir = 'D:/SSD_data/pic/'
+curDir = sys.path[0]
 count = 0
 for parent, dirnames, filenames in os.walk(curDir):    
     for filename in filenames:  
-        #pdb.set_trace()
-        newName = num2str(count)+'.jpg'
-        print(filename, "---->", newName)  
-        os.rename(os.path.join(parent, filename), os.path.join(parent, newName))  
-        count = count + 1
+        if filename != 'rename.py'
+            newName = num2str(count)+'.jpg'
+            print(filename, "---->", newName)  
+            os.rename(os.path.join(parent, filename), os.path.join(parent, newName))  
+            count = count + 1
   
 print 'All done!' 
