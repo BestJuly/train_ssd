@@ -21,7 +21,7 @@ curDir = sys.path[0]
 count = 0
 for parent, dirnames, filenames in os.walk(curDir):    
     for filename in filenames:  
-        if filename != 'rename.py'
+        if filename != 'rename.py':
             newName = num2str(count)+'.jpg'
             print(filename, "---->", newName)  
             os.rename(os.path.join(parent, filename), os.path.join(parent, newName))  
