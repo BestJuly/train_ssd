@@ -35,17 +35,17 @@ the rule to generate these txt files can be set on your own by modifying the pyt
 Now you have all files in needed: images(.jpg)/labels(.xml)/list(.txt)
 
 * All the following steps are operated in `SSD/caffe`
-1. create a folder in `/data` to store your files
+**1.** create a folder in `/data` to store your files
 ```
 mkdir mydataset
 ```
-2. copy `create_list.sh` 、`create_data.sh`、`labelmap_voc.prototxt` under `/data/VOC0712` to your own folder `/mydataset`
+**2.** copy `create_list.sh` 、`create_data.sh`、`labelmap_voc.prototxt` under `/data/VOC0712` to your own folder `/mydataset`
 ```
 cp data/create* ./mydataset
 cp data/label* ./mydataset
 ```
-3. modify `labelmap_voc.prototxt` to define your own label   
-4. put all your files in the following structure
+**3.** modify `labelmap_voc.prototxt` to define your own label   
+**4.** put all your files in the following structure
 ```
 -- mydataset
        | -- VOC2007
@@ -56,9 +56,9 @@ cp data/label* ./mydataset
                         | -- Segmentation   # trainval.txt、train.txt、val.txt、test.txt
                | -- JPEGImages  # your image files
 ```
-5. modify `create_list.sh`、`create_data.sh` according to your own condition and run in sequence to get lmdb files and other necessary files   
+**5.** modify `create_list.sh`、`create_data.sh` according to your own condition and run in sequence to get lmdb files and other necessary files   
 
-6. modify `/examples/ssd/ssd_pascal.py`
+**6.** modify `/examples/ssd/ssd_pascal.py`
 ```
 train_data      # lmdb file path for training 
 test_data       # lmdb file path for testing
@@ -68,7 +68,7 @@ num_classes     # your class numbers plus 1 (background)
 num_test_image  # number of your test image
 gpus            # which GPU you want to use
 ```
-7. run `ssd_pascal.py` to train your model
+**7.** run `ssd_pascal.py` to train your model
 
 ## test
 *This will be upload soon.*
