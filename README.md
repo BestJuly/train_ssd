@@ -1,5 +1,6 @@
 # train_ssd
 use single shot multibox detector(SSD) to train with your own dataset
+The official repository is available [here](https://github.com/weiliu89/caffe/tree/ssd).The arXiv paper is available [here](http://arxiv.org/abs/1512.02325).    
 
 ## data preparation
 
@@ -34,7 +35,8 @@ the rule to generate these txt files can be set on your own by modifying the pyt
 ## train
 Now you have all files in needed: images(.jpg)/labels(.xml)/list(.txt)
 
-* All the following steps are operated in `SSD/caffe`
+* All the following steps are operated in `SSD/caffe`   
+
 **1.** create a folder in `/data` to store your files
 ```
 mkdir mydataset
