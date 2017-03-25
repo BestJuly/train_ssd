@@ -1,6 +1,7 @@
 # train_ssd
 use single shot multibox detector(SSD) to train with your own dataset.   
 The official repository is available [here](https://github.com/weiliu89/caffe/tree/ssd).The arXiv paper is available [here](http://arxiv.org/abs/1512.02325).    
+Here is an instruction in English. A Chinese version is here:[ÖÐÎÄ°æ±¾](https://github.com/BestJuly/train_ssd/blob/master/readme_zh.md).
 
 ## data preparation
 
