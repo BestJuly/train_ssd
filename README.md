@@ -15,7 +15,7 @@ Windows: `dir *jpg > list.txt`
 
 ### 2. generate groundtruth    
 usage of `gt_generate.m`:   
-* classes.bmp is used to do labeling   
+* ~~classes.bmp is used to do labeling~~Hopefully, in the new version, you don't need to worry about the `class.bmp`. 
 * modify the list `type` to meet your own classes   
 * `filelist`/`filegt`/`path` should be modified according to your own condition
 * when running the code, you just draw rectangles of the objects in each image and then click the classes to do labeling
