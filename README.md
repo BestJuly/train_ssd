@@ -2,6 +2,8 @@
 use single shot multibox detector(SSD) to train with your own dataset.   
 The official repository is available [here](https://github.com/weiliu89/caffe/tree/ssd).The arXiv paper is available [here](http://arxiv.org/abs/1512.02325).    
 
+Here is an instruction in English. A Chinese version is [here](https://github.com/BestJuly/train_ssd/blob/master/readme_zh.md).
+
 ## data preparation
 
 ### 0.rename images
@@ -15,7 +17,7 @@ Windows: `dir *jpg > list.txt`
 
 ### 2. generate groundtruth    
 usage of `gt_generate.m`:   
-* classes.bmp is used to do labeling   
+* ~~classes.bmp is used to do labeling~~Hopefully, in the new version, you don't need to worry about the `class.bmp`. 
 * modify the list `type` to meet your own classes   
 * `filelist`/`filegt`/`path` should be modified according to your own condition
 * when running the code, you just draw rectangles of the objects in each image and then click the classes to do labeling
