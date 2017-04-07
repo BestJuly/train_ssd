@@ -100,4 +100,6 @@ gpus            指定训练用的GPU的id号，用逗号分隔
 8. 运行`ssd_pascal.py`进行训练
 
 ## 测试
-Coming soon.
+可以使用原作者代码里的`ssd_detect.ipynb`进行检测。   
+也可以使用这里提供的`ssd_single_image.py`对单张图片进行检测，使用时请将对应的路径进行修改。   
+![Result](https://github.com/BestJuly/train_ssd/blob/master/tools/00501.png)
