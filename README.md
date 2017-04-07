@@ -77,7 +77,7 @@ gpus            # which GPU you want to use
 ## test
 You can use `ssd_detect.ipynb` from the official repository.   
 Or you can use my `ssd_single_image.py` to detect one single image.   
-If you want to run `ssd_single_image.py`, remember to change the path(model path, image path, etc.) in the file.   
+If you want to run `ssd_single_image.py`, remember to **change path**(model path, image path, etc.) in the file.   
 ![Result](https://github.com/BestJuly/train_ssd/blob/master/tools/00501.png)
 
 
