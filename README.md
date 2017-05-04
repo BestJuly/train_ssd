@@ -13,7 +13,7 @@ Here is an instruction in English. A Chinese version is [here](https://github.co
 
 ### 1. make a list of your dataset    
 Linux: `ls *.jpg > list.txt`   
-Windows: `dir *jpg > list.txt`   
+Windows: `dir *.jpg /b > list.txt`   
 
 ### 2. generate groundtruth    
 usage of `gt_generate.m`:   
